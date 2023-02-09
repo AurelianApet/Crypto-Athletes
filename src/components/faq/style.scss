@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+
+.faqs {
+  width: 100%;
+  padding: 64px calc((100vw - 1280px) / 2) 24px;
+  background-color: $White-gray;
+
+  & > span {
+    padding: 0 64px;
+    font-size: 40px;
+    font-weight: bold;
+
+    @media (max-width: 1024px) {
+      padding: 0 32px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 8px;
+    }
+  }
+
+  &-item {
+    padding: 0 64px;
+    z-index: 2;
+
+    @media (max-width: 1024px) {
+      padding: 0 32px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 8px;
+    }
+
+    &:not(:last-child) {
+      margin-top: 32px;
+
+      @media (max-width: 1024px) {
+        padding: 0 24px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+    }
+
+    &-title {
+      font-size: 28px;
+      font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    &-content {
+      font-size: 18px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      & span {
+        font-weight: bold;
+      }
+
+      & > a {
+        color: $Purple;
+      }
+    }
+  }
+
+  &-decoration {
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+
+    & > img {
+      width: 360px;
+      height: stretch;
+      height: intrinsic;
+    }
+  }
+}
