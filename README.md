@@ -1,6 +1,6 @@
 # Crypto Athletes - 850 Ballers in NFT on Ethereum.
 
-This project is for [Crypto Athletes](https://realcryptoathletes.com)
+This project is for [Crypto Athletes](https://crypto-athletes.vercel.app/)
 
 ## Deploy the ERC721 smart contract
 
